@@ -1,9 +1,9 @@
 import {WKPaginatedResponse, WKResponse} from "./WKResponse";
 
-export type WKSRSResponse = WKResponse<WKSRS>;
-export type WKAllSRSResponse =WKPaginatedResponse<WKSRS[]>;
+export interface WKSRSResponse extends WKResponse<WKSRS>{}
+export interface WKAllSRSResponse extends WKPaginatedResponse<WKSRS[]>{}
 
-export type WKSRS = {
+export interface WKSRS {
     burning_stage_position: number;
     created_at: Date;
     description: string;
@@ -14,7 +14,7 @@ export type WKSRS = {
     unlocking_stage_position: number;
 }
 
-export type WKSRSStage = {
+export interface WKSRSStage {
     interval?: number;
     interval_unit?: string;
     position: number;
