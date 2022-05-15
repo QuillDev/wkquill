@@ -1,14 +1,21 @@
-import {WKPaginatedResponse} from "./types/WKResponse";
-import {WKAllAssignmentsResponse, WKAssignment} from "./types/WKAssignment";
-import {WKAllSubjectsResponse, WKSubject} from "./types/WKSubject";
-import {WKAllSRSResponse, WKSRS, WKSRSStage} from "./types/WKSrs";
-import {WKUser} from "./types/WKUser";
+import {WKPaginatedResponse} from "../types/WKResponse";
+import {WKAllAssignmentsResponse, WKAssignment} from "../types/WKAssignment";
+import {WKAllSubjectsResponse, WKSubject} from "../types/WKSubject";
+import {WKAllSRSResponse, WKSRS, WKSRSStage} from "../types/WKSrs";
+import {WKUser} from "../types/WKUser";
 
 export class WaniClient {
-    constructor(private token: string,
-                private revision: string = "20170710",
-                private baseURL: string = "https://api.wanikani.com/v2/"
+
+    private readonly token: string;
+    private readonly revision: string;
+    private readonly baseURL: string;
+    constructor(token: string,
+                revision: string = "20170710",
+                baseURL: string = "https://api.wanikani.com/v2/"
     ) {
+        this.token = token;
+        this.revision = revision;
+        this.baseURL = baseURL;
     }
 
     //TODO: Add query parameter modifiers
