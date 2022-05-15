@@ -2,6 +2,8 @@
 
 ## Currently under construction! Use at your own risk!
 
+[![npm version](https://badge.fury.io/js/wkquill.svg)](https://badge.fury.io/js/wkquill)
+
 ## Installation
 ```shell
 #yarn 
