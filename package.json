@@ -1,10 +1,10 @@
 {
   "name": "wkquill",
-  "version": "1.0.34",
+  "version": "1.0.35",
   "author": "QuillDev",
   "license": "MIT",
   "scripts": {
-    "build": "tsup --sourcemap",
+    "build": "tsup --dts",
     "version": "tsup"
   },
   "main": "./dist/index.js",
