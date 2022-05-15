@@ -1,14 +1,12 @@
 {
   "name": "wkquill",
-  "version": "1.0.28",
+  "version": "1.0.30",
   "author": "QuillDev",
   "license": "MIT",
-
   "scripts": {
     "build": "tsup",
     "version": "tsup"
   },
-
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
