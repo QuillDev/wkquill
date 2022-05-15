@@ -1,4 +1,4 @@
-export interface WKUser {
+export type WKUser = {
     current_vacation_started_at?: Date;
     level: number;
     preferences: WKUserPreferences;
@@ -8,7 +8,7 @@ export interface WKUser {
     username: string;
 }
 
-export interface WKUserPreferences {
+export type WKUserPreferences = {
     default_voice_actor_id: number;
     lessons_autoplay_audio: boolean;
     lessons_batch_size: number;
@@ -17,7 +17,7 @@ export interface WKUserPreferences {
     reviews_display_srs_indicator: boolean;
 }
 
-export interface WKSubscription {
+export type WKSubscription = {
     active: boolean;
     max_level_granted: number;
     period_ends_in?: Date;

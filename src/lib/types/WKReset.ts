@@ -1,9 +1,9 @@
-import {WKPaginatedResponse, WKResponse} from "./WKResponse";
+import {WKResponse} from "./WKResponse";
 
-export interface WKAllResetsResponse extends WKResponse<WKReset[]>{}
-export interface WKResetResponse extends WKPaginatedResponse<WKReset>{}
+export type WKAllResetsResponse = WKResponse<WKReset[]>
+export type WKResetResponse = WKResponse<WKReset>;
 
-export interface WKReset {
+export type WKReset = {
     confirmed_at?: Date;
     created_at?: Date;
     original_level: number;

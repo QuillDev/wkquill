@@ -1,9 +1,9 @@
 import {WKPaginatedResponse, WKResponse} from "./WKResponse";
 
-export interface AssignmentResposne extends WKResponse<WKAssignment>{}
-export interface WKAllAssignmentsResponse extends WKPaginatedResponse<WKAssignment[]>{}
+export type AssignmentResposne = WKResponse<WKAssignment>
+export type WKAllAssignmentsResponse = WKPaginatedResponse<WKAssignment[]>;
 
-export interface WKAssignment {
+export type WKAssignment = {
     available_at?: Date;
     burned_at?: Date;
     created_at?: Date;

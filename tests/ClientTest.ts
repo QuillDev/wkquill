@@ -1,4 +1,4 @@
-import {WaniClient} from "../src/lib/client/WaniClient";
+import {WaniClient} from "../src";
 import 'dotenv/config';
 
 (async () => {

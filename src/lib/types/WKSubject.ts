@@ -1,9 +1,9 @@
 import {WKPaginatedResponse, WKResponse} from "./WKResponse";
 
-export interface WKSubjectResponse extends WKResponse<WKSubject>{};
-export interface WKAllSubjectsResponse extends WKPaginatedResponse<WKSubject[]>{}
+export type WKSubjectResponse = WKResponse<WKSubject>;
+export type WKAllSubjectsResponse = WKPaginatedResponse<WKSubject[]>
 
-export interface WKSubject {
+export type WKSubject = {
     auxiliary_meanings: WKAuxiliaryMeaning[];
     characters: string;
     created_at: Date;
@@ -17,13 +17,13 @@ export interface WKSubject {
     spaced_repetition_system_id: number;
 }
 
-export interface WKMeaning {
+export type WKMeaning = {
     meaning: string;
     primary: boolean;
     accepted_answer: boolean;
 }
 
-export interface WKAuxiliaryMeaning {
+export type WKAuxiliaryMeaning = {
     meaning: string;
     type: string;
 }

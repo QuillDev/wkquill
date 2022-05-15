@@ -1,15 +1,15 @@
-export interface WKResponse<T> {
+export type WKResponse<T> = {
     object: string;
     url: string;
     data_updated_at?: Date;
     data: T
 }
 
-export interface WKPaginatedResponse<T> extends WKResponse<T> {
+export type WKPaginatedResponse<T> = WKResponse<T> & {
     pages: WKPages
 }
 
-export interface WKPages {
+export type WKPages = {
     next_url?: string;
     previous_url?: string;
     per_page: number;
